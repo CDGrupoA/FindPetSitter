@@ -3,10 +3,30 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { RegisterComponent } from './pages/register/register.component';
+import { LoginComponent } from './pages/login/login.component';
+import { ButtonComponent } from './components/atoms/button/button.component';
+import { HyperlinkComponent } from './components/atoms/hyperlink/hyperlink.component';
+import { H2Component } from './components/atoms/h2/h2.component';
+import { LoginFormComponent } from './components/molecules/login-form/login-form.component';
+import { InputComponent } from './components/atoms/input/input.component';
+import { AuthButtonsComponent } from './components/molecules/auth-buttons/auth-buttons.component';
+import { LoginCardComponent } from './components/organisms/login-card/login-card.component';
+import { LoginTemplateComponent } from './components/templates/login-template/login-template.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    RegisterComponent,
+    LoginComponent,
+    ButtonComponent,
+    HyperlinkComponent,
+    H2Component,
+    LoginFormComponent,
+    InputComponent,
+    AuthButtonsComponent,
+    LoginCardComponent,
+    LoginTemplateComponent,
   ],
   imports: [
     BrowserModule,
