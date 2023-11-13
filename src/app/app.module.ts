@@ -1,3 +1,7 @@
+import { AngularFireModule } from '@angular/fire/compat';
+import { AngularFireAuthModule } from '@angular/fire/compat/auth';
+import { environment } from '../environment/environment';
+
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
@@ -13,6 +17,7 @@ import { InputComponent } from './components/atoms/input/input.component';
 import { AuthButtonsComponent } from './components/molecules/auth-buttons/auth-buttons.component';
 import { LoginCardComponent } from './components/organisms/login-card/login-card.component';
 import { LoginTemplateComponent } from './components/templates/login-template/login-template.component';
+
 
 @NgModule({
   declarations: [
@@ -30,7 +35,10 @@ import { LoginTemplateComponent } from './components/templates/login-template/lo
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    //Firebase
+    AngularFireModule.initializeApp(environment.firebaseConfig),
+    AngularFireAuthModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
