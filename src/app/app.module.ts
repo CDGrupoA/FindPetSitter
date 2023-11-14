@@ -17,6 +17,12 @@ import { InputComponent } from './components/atoms/input/input.component';
 import { AuthButtonsComponent } from './components/molecules/auth-buttons/auth-buttons.component';
 import { LoginCardComponent } from './components/organisms/login-card/login-card.component';
 import { LoginTemplateComponent } from './components/templates/login-template/login-template.component';
+import { RegisterTemplateComponent } from './components/templates/register-template/register-template.component';
+import { RegisterCardComponent } from './components/organisms/register-card/register-card.component';
+import { RegisterFormComponent } from './components/molecules/register-form/register-form.component';
+import { InputNameSurnameComponent } from './components/atoms/input-name-surname/input-name-surname.component';
+import { InputCheckboxComponent } from './components/atoms/input-checkbox/input-checkbox.component';
+
 
 
 @NgModule({
@@ -32,6 +38,11 @@ import { LoginTemplateComponent } from './components/templates/login-template/lo
     AuthButtonsComponent,
     LoginCardComponent,
     LoginTemplateComponent,
+    RegisterTemplateComponent,
+    RegisterCardComponent,
+    RegisterFormComponent,
+    InputNameSurnameComponent,
+    InputCheckboxComponent,
   ],
   imports: [
     BrowserModule,

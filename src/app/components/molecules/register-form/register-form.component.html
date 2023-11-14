@@ -1,0 +1,28 @@
+<form>
+    <h2 class="text-2xl font-semibold mb-4 text-center">Cadastro</h2>
+  
+    <!-- Name Input-->
+    <div class="flex space-x-4">
+        <div class="w-1/2">
+          <app-input-name-surname type="text" id="name" placeholder="Nome"></app-input-name-surname>
+        </div>
+        <div class="w-1/2">
+          <app-input-name-surname type="text" id="surname" placeholder="Sobrenome"></app-input-name-surname>
+        </div>
+      </div>
+    <br>
+    <!-- Email Input -->
+    <div class="mb-4">
+        <app-input type="email" id="email" name="email" placeholder="Email"></app-input>
+    </div>
+  
+    <!-- Password Input -->
+    <div class="mb-4">
+      <app-input type="password" id="password" name="password" placeholder="Senha"></app-input>
+    </div>
+  
+    <app-button>Cadastrar</app-button>
+  </form>
+  
+  <app-input-checkbox type="checkbox" id="checkbox_register" name="checkbox_register"></app-input-checkbox>
+  <app-hyperlink>  Termos e condições</app-hyperlink>
