@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-h2',
@@ -6,5 +6,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./h2.component.css']
 })
 export class H2Component {
+  @Input() customClasses: string =''
 
 }

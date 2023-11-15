@@ -1,24 +1,21 @@
 <form>
 
-  <h2 class="text-2xl font-semibold mb-4 text-center">Login</h2>
+  <app-h2 customClasses="mb-6">Login</app-h2>
 
-  <!-- Email Input -->
   <div class="mb-4">
-      <app-input type="email" id="email" name="email" placeholder="email"></app-input>
+      <app-input customClasses="bg-[#D7D1C2] placeholder:text-black font-medium" type="email" id="email" name="email" placeholder="email"></app-input>
   </div>
 
-  <!-- Password Input -->
   <div class="mb-4">
-    <app-input type="password" id="password" name="password" placeholder="Senha"></app-input>
+    <app-input customClasses="bg-[#D7D1C2] placeholder:text-black font-medium" type="password" id="password" name="password" placeholder="Senha"></app-input>
   </div>
 
-  <!-- Forgot Password and Sign Up links -->
-  <app-hyperlink  >Esqueci minha senha</app-hyperlink>
+  <app-hyperlink customClasses="font-body text-base">Esqueci minha senha</app-hyperlink>
 
 
   <app-button>Entrar</app-button>
 </form>
 
-<p>Não possui uma conta? Cadastre-se
+<p class="font-body text-base">Não possui uma conta? Cadastre-se
       <app-hyperlink >aqui</app-hyperlink>
     </p>
