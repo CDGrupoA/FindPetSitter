@@ -1,3 +1,7 @@
+import { AngularFireModule } from '@angular/fire/compat';
+import { AngularFireAuthModule } from '@angular/fire/compat/auth';
+import { environment } from '../environment/environment';
+
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
@@ -26,6 +30,13 @@ import { ReportsSectionComponent } from './components/organisms/home-sections/re
 import { InfoCardComponent } from './components/molecules/info-card/info-card.component';
 import { ReportCardComponent } from './components/molecules/report-card/report-card.component';
 import { FooterComponent } from './components/organisms/footer/footer.component';
+import { RegisterTemplateComponent } from './components/templates/register-template/register-template.component';
+import { RegisterCardComponent } from './components/organisms/register-card/register-card.component';
+import { RegisterFormComponent } from './components/molecules/register-form/register-form.component';
+import { InputNameSurnameComponent } from './components/atoms/input-name-surname/input-name-surname.component';
+import { InputCheckboxComponent } from './components/atoms/input-checkbox/input-checkbox.component';
+
+
 
 @NgModule({
   declarations: [
@@ -53,10 +64,18 @@ import { FooterComponent } from './components/organisms/footer/footer.component'
     InfoCardComponent,
     ReportCardComponent,
     FooterComponent,
+    RegisterTemplateComponent,
+    RegisterCardComponent,
+    RegisterFormComponent,
+    InputNameSurnameComponent,
+    InputCheckboxComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    //Firebase
+    AngularFireModule.initializeApp(environment.firebaseConfig),
+    AngularFireAuthModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
