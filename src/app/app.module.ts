@@ -35,6 +35,12 @@ import { RegisterCardComponent } from './components/organisms/register-card/regi
 import { RegisterFormComponent } from './components/molecules/register-form/register-form.component';
 import { InputNameSurnameComponent } from './components/atoms/input-name-surname/input-name-surname.component';
 import { InputCheckboxComponent } from './components/atoms/input-checkbox/input-checkbox.component';
+import { SearchComponent } from './pages/search/search.component';
+import { SearchTemplateComponent } from './components/templates/search-template/search-template.component';
+import { InputSectionComponent } from './components/organisms/search-sections/input-section/input-section.component';
+import { ResultSectionComponent } from './components/organisms/search-sections/result-section/result-section.component';
+import { SitterCardComponent } from './components/molecules/sitter-card/sitter-card.component';
+import { SearchInputComponent } from './components/molecules/search-input/search-input.component';
 
 
 
@@ -69,6 +75,12 @@ import { InputCheckboxComponent } from './components/atoms/input-checkbox/input-
     RegisterFormComponent,
     InputNameSurnameComponent,
     InputCheckboxComponent,
+    SearchComponent,
+    SearchTemplateComponent,
+    InputSectionComponent,
+    ResultSectionComponent,
+    SitterCardComponent,
+    SearchInputComponent,
   ],
   imports: [
     BrowserModule,
