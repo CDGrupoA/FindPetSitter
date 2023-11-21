@@ -7,7 +7,15 @@
       <p class="text-[#F5F3EC] font-body font-medium text-3xl">{{ cidade }}</p>
 
       <div class="flex justify-between gap-x-3">
-        <app-star class="flex"></app-star>
+        <div class="flex">
+          <ng-container *ngFor="let i of [0, 1, 2, 3, 4]">
+            <app-star
+              [fillColor]="i < nota ? 'white' : 'none'"
+              strokeColor="white"
+            ></app-star>
+          </ng-container>
+        </div>
+
         <p class="text-white font-body text-2xl">
           ({{ avaliacoes }} Avaliações)
         </p>
@@ -33,9 +41,11 @@
       <p class="font-body text-2xl text-left font-normal line-clamp-3">
         {{ descricao }}
       </p>
-      <app-button customClasses="w-3/4 rounded-2xl ml-20 text-xl p-3"
-        >Ver Perfil</app-button
-      >
+      <a routerLink="/profile/{{ id }}">
+        <app-button customClasses="w-3/4 rounded-2xl ml-20 text-xl p-3"
+          >Ver Perfil</app-button
+        >
+      </a>
     </div>
   </div>
 </div>

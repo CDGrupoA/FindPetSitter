@@ -10,7 +10,8 @@ export class SitterCardComponent {
   @Input() name: string ='';
   @Input() descricao: string = '';
   @Input() cidade: string = '';
-  @Input() nota: string = '';
+  @Input() nota: number = 1
   @Input() avaliacoes: string = '';
   @Input() valor: string ='';
+  @Input() id: string = ''
 }

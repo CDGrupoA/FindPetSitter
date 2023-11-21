@@ -1,0 +1,21 @@
+<div class="bg-[#F5F3EC] p-4 flex justify-center shadow-noteShadow min-h-full">
+  <!-- Imagem no canto esquerdo -->
+  <img
+    [src]="imagePath"
+    alt="Imagem do Cliente"
+    class="mr-4 h-32 w-32 rounded-lg"
+  />
+
+  <div class="flex flex-col flex-grow">
+    <!-- Nome do Cliente -->
+    <div class="justify-between">
+      <h4 class="text-2xl font-normal font-body mb-2">{{ name }}</h4>
+    </div>
+
+    <!-- Parágrafo com informações do relato -->
+    <p class="text-black font-body font-normal text-left mb-4">{{ report }}</p>
+
+    <!-- Espaço para cidade e data -->
+    <p class="font-body text-right">{{ cidade }} - {{ data }}</p>
+  </div>
+</div>

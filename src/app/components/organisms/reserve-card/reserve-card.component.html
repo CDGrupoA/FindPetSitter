@@ -3,12 +3,14 @@
 >
   <div>
     <p class="font-body text-2xl text-[#F5F3EC] font-semibold">Valores:</p>
-    <p class="font-h2 text-4xl text-[#F5F3EC] font-semibold">50R$ Por Turno</p>
+    <p class="font-h2 text-4xl text-[#F5F3EC] font-semibold">
+      {{ valor }}R$ Por Turno
+    </p>
   </div>
 
   <div>
     <p class="font-body text-2xl text-[#F5F3EC] font-semibold">
-      Fulana aceita:
+      {{ name }} aceita:
     </p>
     <p class="font-h2 text-4xl text-[#F5F3EC] font-semibold">
       Pix Cartão Dinheiro
@@ -16,7 +18,9 @@
   </div>
 
   <app-date-selector class="flex flex-col p-3"></app-date-selector>
-  <app-button customClasses="p-6 rounded-3xl text-3xl w-2/5"
-    >Reservar</app-button
-  >
+  <div class="flex justify-center items-center w-full">
+    <app-button customClasses="p-6 px-16 rounded-3xl text-3xl "
+      >Reservar</app-button
+    >
+  </div>
 </div>

@@ -1,0 +1,25 @@
+<div class="p-3 w-full max-md:max-w-full">
+  <h1 class="ml-20 font-h1 text-4xl font-medium">Minha experiência:</h1>
+
+  <app-card customClasses="bg-[#067883] mt-5 ml-20 p-6 w-5/12 ">
+    <p class="font-body align-middle font-normal text-white text-2xl">
+      {{ foundSitter.descricao }}
+    </p>
+  </app-card>
+
+  <h1 class="ml-20 mt-20 font-h1 text-4xl font-medium">Avaliações:</h1>
+
+  <div
+    class="grid grid-rows-2 grid-flow-col gap-10 p-10 px-20 flex gap-15 justify-center"
+  >
+    <div *ngFor="let rating of ratings">
+      <app-rating-card
+        imagePath="{{ rating.image }}"
+        [name]="rating.name"
+        [report]="rating.report"
+        [cidade]="rating.cidade"
+        [data]="rating.data"
+      ></app-rating-card>
+    </div>
+  </div>
+</div>

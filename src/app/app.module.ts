@@ -48,6 +48,9 @@ import { SitterTagsComponent } from './components/molecules/sitter-tags/sitter-t
 import { ClientReportComponent } from './components/molecules/client-report/client-report.component';
 import { PerfilTemplateComponent } from './components/templates/perfil-template/perfil-template.component';
 import { StarComponent } from './components/atoms/star/star.component';
+import { InfoSectionComponent } from './components/organisms/profileSections/info-section/info-section.component';
+import { RatingSectionComponent } from './components/organisms/profileSections/rating-section/rating-section.component';
+import { RatingCardComponent } from './components/molecules/rating-card/rating-card.component';
 
 
 
@@ -95,6 +98,9 @@ import { StarComponent } from './components/atoms/star/star.component';
     ClientReportComponent,
     PerfilTemplateComponent,
     StarComponent,
+    InfoSectionComponent,
+    RatingSectionComponent,
+    RatingCardComponent,
     ],
   imports: [
     BrowserModule,
