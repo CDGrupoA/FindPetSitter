@@ -1,21 +1,31 @@
-<form>
+<form class="gap-4 flex flex-col">
+  <app-h2 customClasses="mb-6 text-[#067883]">Login</app-h2>
 
-  <app-h2 customClasses="mb-6">Login</app-h2>
+  <app-input
+    customClasses="bg-[#D7D1C2] placeholder:text-black font-regular font-body"
+    type="email"
+    id="email"
+    name="email"
+    placeholder="E-mail"
+  ></app-input>
 
-  <div class="mb-4">
-      <app-input customClasses="bg-[#D7D1C2] placeholder:text-black font-medium" type="email" id="email" name="email" placeholder="email"></app-input>
+  <app-input
+    customClasses="bg-[#D7D1C2] placeholder:text-black font-regular font-body"
+    type="password"
+    id="password"
+    name="password"
+    placeholder="Senha"
+  ></app-input>
+
+  <app-hyperlink customClasses="font-body text-base "
+    >Esqueci minha senha</app-hyperlink
+  >
+  <div class="flex justify-center w-full">
+    <app-button customClasses="p-2 w-40 rounded-2xl text-xl">Login</app-button>
   </div>
-
-  <div class="mb-4">
-    <app-input customClasses="bg-[#D7D1C2] placeholder:text-black font-medium" type="password" id="password" name="password" placeholder="Senha"></app-input>
-  </div>
-
-  <app-hyperlink customClasses="font-body text-base">Esqueci minha senha</app-hyperlink>
-
-
-  <app-button>Entrar</app-button>
 </form>
 
-<p class="font-body text-base">Não possui uma conta? Cadastre-se
-      <app-hyperlink >aqui</app-hyperlink>
-    </p>
+<p class="font-body text-base">
+  Não possui uma conta? Cadastre-se
+  <app-hyperlink>aqui</app-hyperlink>
+</p>

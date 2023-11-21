@@ -1,4 +1,17 @@
-<div class="flex justify-evenly mt-5 items-center">
-  <app-button customClasses="w-20" (click)="loginWithGoogle()">Gmail</app-button>
-  <app-button customClasses="w-20" (click)="onFacebookLogin()">Facebook</app-button>
+<div class="flex justify-evenly items-center">
+  <app-button
+    customClasses="flex justify-evenly w-full"
+    (click)="loginWithGoogle()"
+  >
+    <img src="assets/imgs/google.png" class="h-1/4 w-1/4" />
+    Gmail</app-button
+  >
+  <app-button
+    customClasses=" flex justify-evenly w-full"
+    (click)="onFacebookLogin()"
+  >
+    <img src="assets/imgs/facebook.png" class="h-1/5 w-1/5" />
+
+    Facebook</app-button
+  >
 </div>

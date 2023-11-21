@@ -41,6 +41,13 @@ import { InputSectionComponent } from './components/organisms/search-sections/in
 import { ResultSectionComponent } from './components/organisms/search-sections/result-section/result-section.component';
 import { SitterCardComponent } from './components/molecules/sitter-card/sitter-card.component';
 import { SearchInputComponent } from './components/molecules/search-input/search-input.component';
+import { PerfilComponent } from './pages/perfil/perfil.component';
+import { ReserveCardComponent } from './components/organisms/reserve-card/reserve-card.component';
+import { DateSelectorComponent } from './components/molecules/date-selector/date-selector.component';
+import { SitterTagsComponent } from './components/molecules/sitter-tags/sitter-tags.component';
+import { ClientReportComponent } from './components/molecules/client-report/client-report.component';
+import { PerfilTemplateComponent } from './components/templates/perfil-template/perfil-template.component';
+import { StarComponent } from './components/atoms/star/star.component';
 
 
 
@@ -81,7 +88,14 @@ import { SearchInputComponent } from './components/molecules/search-input/search
     ResultSectionComponent,
     SitterCardComponent,
     SearchInputComponent,
-  ],
+    PerfilComponent,
+    ReserveCardComponent,
+    DateSelectorComponent,
+    SitterTagsComponent,
+    ClientReportComponent,
+    PerfilTemplateComponent,
+    StarComponent,
+    ],
   imports: [
     BrowserModule,
     AppRoutingModule,

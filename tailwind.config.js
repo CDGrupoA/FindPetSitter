@@ -1,4 +1,5 @@
 /** @type {import('tailwindcss').Config} */
+
 module.exports = {
   content: ["./src/**/*.{html,ts}"],
   theme: {
@@ -35,8 +36,8 @@ module.exports = {
       },
     },
     fontFamily: {
-      h1: ["Calistoga", "serif"],
-      h2: ["Calistoga", "serif"],
+      h1: ["Calistoga"],
+      h2: ["Calistoga"],
       body: ["Roboto Slab", "serif"],
     },
   },

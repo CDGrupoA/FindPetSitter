@@ -1,14 +1,15 @@
-<div class="bg-[#09AAB9] p-4 rounded-md w-60 h-80 grid grid-rows-2 shadow-noteShadow">
-
-  <div class=" bg-white rounded-md flex items-center justify-center">
-
-    <img [src]="imagePath" alt="Imagem" class="p-5 w-32 h-32">
+<div
+  class="bg-[#09AAB9] p-4 rounded-md w-60 h-80 grid grid-rows-2 shadow-noteShadow"
+>
+  <div class="bg-[#E8E4DA] rounded-md flex items-center justify-center">
+    <img [src]="imagePath" alt="Imagem" class="p-5 w-32 h-32" />
   </div>
 
   <div class="flex items-center justify-center">
-    <p class="font-body font-semibold text-center text-[#071222] p-5 w-fit text-xl">
+    <p
+      class="font-body font-normal text-center text-[#071222] p-5 w-fit text-xl"
+    >
       <ng-content></ng-content>
     </p>
   </div>
-
 </div>

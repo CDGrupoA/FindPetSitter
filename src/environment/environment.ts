@@ -13,5 +13,7 @@ export const environment = {
         mFeasurementId: process.env['mFeasurementId']
        -------------------- INCLUDE THE CONFIG FIREBASE HERE -------------------
         */
+
     }
+
 };

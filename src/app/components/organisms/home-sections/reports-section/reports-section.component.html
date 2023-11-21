@@ -1,14 +1,22 @@
 <section class="bg-[#F5F3EC] flex flex-col grid-cols-2 max-h-screen">
-
-
-  <app-card customClasses="bg-[#09AAB9] py-5 px-10 ml-24">
-    <app-h2 customClasses="text-4xl mb-0 font-semibold flex-grow font-h2"> Veja aqui relatos de usuários de Find Pet Sitter</app-h2>
+  <app-card customClasses="bg-[#09AAB9] py-6 px-12 ml-24">
+    <app-h2 customClasses="text-4xl font-bold flex-grow font-h2">
+      Veja aqui relatos de usuários de Find Pet Sitter</app-h2
+    >
   </app-card>
 
   <div class="flex justify-center flex-grow m-20">
     <div class="flex gap-20 justify-center">
-      <app-report-card></app-report-card>
-      <app-report-card></app-report-card>
+      <div *ngFor="let report of reports">
+        <app-report-card
+          imagePath="{{ report.image }}"
+          [name]="report.name"
+          [report]="report.report"
+          [cidade]="report.cidade"
+          [data]="report.data"
+        >
+        </app-report-card>
+      </div>
     </div>
   </div>
 </section>

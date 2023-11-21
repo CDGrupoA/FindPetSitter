@@ -6,6 +6,7 @@ import { Component, Input } from '@angular/core';
   styleUrls: ['./input-name-surname.component.css']
 })
 export class InputNameSurnameComponent {
+  @Input() customClasses: string = '';
   @Input() type: string = '';
   @Input() id: string = '';
   @Input() name: string = '';

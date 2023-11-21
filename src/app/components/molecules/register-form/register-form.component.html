@@ -1,28 +1,54 @@
-<form>
-    <h2 class="text-2xl font-semibold mb-4 text-center">Cadastro</h2>
-  
-    <!-- Name Input-->
-    <div class="flex space-x-4">
-        <div class="w-1/2">
-          <app-input-name-surname type="text" id="name" placeholder="Nome"></app-input-name-surname>
-        </div>
-        <div class="w-1/2">
-          <app-input-name-surname type="text" id="surname" placeholder="Sobrenome"></app-input-name-surname>
-        </div>
-      </div>
-    <br>
-    <!-- Email Input -->
-    <div class="mb-4">
-        <app-input type="email" id="email" name="email" placeholder="Email"></app-input>
+<form class="gap-4 flex flex-col">
+  <app-h2 customClasses="mb-6 text-[#067883]">Cadastro</app-h2>
+
+  <div class="flex space-x-4">
+    <div class="w-1/2">
+      <app-input-name-surname
+        customClasses="bg-[#D7D1C2] placeholder:text-black font-regular font-body"
+        type="text"
+        id="name"
+        placeholder="Nome"
+      ></app-input-name-surname>
     </div>
-  
-    <!-- Password Input -->
-    <div class="mb-4">
-      <app-input type="password" id="password" name="password" placeholder="Senha"></app-input>
+    <div class="w-1/2">
+      <app-input-name-surname
+        customClasses="bg-[#D7D1C2] placeholder:text-black font-regular font-body"
+        type="text"
+        id="surname"
+        placeholder="Sobrenome"
+      ></app-input-name-surname>
     </div>
-  
-    <app-button>Cadastrar</app-button>
-  </form>
-  
-  <app-input-checkbox type="checkbox" id="checkbox_register" name="checkbox_register"></app-input-checkbox>
-  <app-hyperlink>  Termos e condições</app-hyperlink>
+  </div>
+  <!-- Email Input -->
+
+  <app-input
+    customClasses="bg-[#D7D1C2] placeholder:text-black font-regular font-body"
+    type="email"
+    id="email"
+    name="email"
+    placeholder="Email"
+  ></app-input>
+
+  <app-input
+    customClasses="bg-[#D7D1C2] placeholder:text-black font-regular font-body"
+    type="password"
+    id="password"
+    name="password"
+    placeholder="Senha"
+  ></app-input>
+
+  <div>
+    <app-input-checkbox
+      type="checkbox"
+      id="checkbox_register"
+      name="checkbox_register"
+    ></app-input-checkbox>
+    <app-hyperlink> Termos e condições</app-hyperlink>
+  </div>
+
+  <div class="flex justify-center w-full">
+    <app-button customClasses="p-2 w-48 rounded-2xl text-2xl"
+      >Criar Perfil</app-button
+    >
+  </div>
+</form>

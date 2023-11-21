@@ -1,43 +1,36 @@
-<section class="bg-[#D7D1C2] flex flex-col grid-cols-4 p-10 ">
-
-  <app-card customClasses="bg-[#09AAB9] mb-10 ml-20">
-    <app-h2 customClasses="font-bold font-h2 align-middle mb-0 bg-">Como funciona?</app-h2>
+<section class="bg-[#D7D1C2] flex flex-col grid-cols-4 p-10">
+  <app-card customClasses="bg-[#09AAB9] mb-10 ml-20 p-8">
+    <app-h2 customClasses="font-h2 align-middle text-shadow font-normal "
+      >Como funciona ?</app-h2
+    >
   </app-card>
 
+  <div class="flex flex-col items-center justify-center gap-4 p-12">
+    <div class="flex flex-row items-center gap-x-12">
+      <app-info-card imagePath="assets\imgs\other/search.png">
+        Busque por Localização
+      </app-info-card>
 
-<div class="flex flex-col items-center justify-center gap-10">
-
-  <div class="flex gap-8 justify-center align-middle">
-    <app-info-card imagePath="assets\imgs\search.jpg">
-        Busque por localização
-    </app-info-card>
-
-    <app-info-card imagePath="assets\imgs\Name (1).jpg">
+      <app-info-card imagePath="assets\imgs\other/sitterdog.png">
         Encontre seu Sitter e visite seu perfil
-    </app-info-card>
+      </app-info-card>
 
-    <app-info-card imagePath="assets\imgs\aprove.jpg">
+      <app-info-card imagePath="assets\imgs\other/aprove.png">
         Com seu Sitter escolhido agora é só reservar !
+      </app-info-card>
 
-    </app-info-card>
-
-    <app-info-card imagePath="assets\imgs\coment.jpg">
+      <app-info-card imagePath="assets\imgs\other/coment.png">
         Entre em contato com o Sitter se tiver dúvidas
-    </app-info-card>
+      </app-info-card>
+    </div>
 
+    <h3 class="text-center font-body font-normal text-4xl self-center m-10 p-4">
+      O processo de busca rápido e confiável, nossos Sitters são verificados e
+      você pode entrar em contato a qualquer momento através do nosso site.
+    </h3>
 
-
+    <app-button customClasses="p-4 pr-10 pl-10 text-3xl rounded-xl">
+      Encontre seu Pet Sitter
+    </app-button>
   </div>
-
-  <h3 class="text-center font-body font-medium text-4xl self-center m-10 ">
-    O processo de busca rápido e confiável, nossos Sitters são verificados e
-     você pode entrar em contato a qualquer momento através do nosso site.
-  </h3>
-
-
-  <app-button customClasses="p-4 pr-10 pl-10 text-3xl rounded-xl">
-    Encontre seu Pet Sitter
-  </app-button>
-
-</div>
 </section>
