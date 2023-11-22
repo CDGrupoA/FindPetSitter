@@ -6,9 +6,11 @@ import firebase from 'firebase/compat/app';
   providedIn: 'root'
 })
 export class AuthService {
-  constructor(private afAuth: AngularFireAuth) { }
+  constructor(private afAuth: AngularFireAuth,) { }
 
   loginWithGoogle() {
     return this.afAuth.signInWithPopup(new firebase.auth.GoogleAuthProvider());
   }
+
+
 }

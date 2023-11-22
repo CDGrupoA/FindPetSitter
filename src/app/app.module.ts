@@ -51,7 +51,8 @@ import { StarComponent } from './components/atoms/star/star.component';
 import { InfoSectionComponent } from './components/organisms/profileSections/info-section/info-section.component';
 import { RatingSectionComponent } from './components/organisms/profileSections/rating-section/rating-section.component';
 import { RatingCardComponent } from './components/molecules/rating-card/rating-card.component';
-
+import { UserSettingsComponent } from './pages/user-settings/user-settings.component';
+import { PopupComponent } from './components/molecules/popup/popup.component';
 
 
 @NgModule({
@@ -101,6 +102,8 @@ import { RatingCardComponent } from './components/molecules/rating-card/rating-c
     InfoSectionComponent,
     RatingSectionComponent,
     RatingCardComponent,
+    UserSettingsComponent,
+    PopupComponent,
     ],
   imports: [
     BrowserModule,

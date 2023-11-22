@@ -1,6 +1,7 @@
 
 import { Component, Output, EventEmitter } from '@angular/core';
-import { AuthService } from '../../../auth.service';
+import { AuthService } from '../../../services/auth.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-auth-buttons',
@@ -8,17 +9,16 @@ import { AuthService } from '../../../auth.service';
   styleUrls: ['./auth-buttons.component.css']
 })
 export class AuthButtonsComponent {
-  constructor(private authService: AuthService) {}
+  constructor(private authService: AuthService,
+    private router:Router) {}
 
   @Output() googleLogin = new EventEmitter<void>();
 
 
-  //Substituir nome pela função correspondente no html deste componente
-  // Adicionar console.log para verificação de autenticação
   loginWithGoogle() {
     this.authService.loginWithGoogle()
     .then(result => {
-      console.log(result);
+      this.router.navigate([''])
     })
     .catch(error => console.error(error));
   }
