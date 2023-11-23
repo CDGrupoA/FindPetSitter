@@ -53,7 +53,7 @@ import { RatingSectionComponent } from './components/organisms/profileSections/r
 import { RatingCardComponent } from './components/molecules/rating-card/rating-card.component';
 import { UserSettingsComponent } from './pages/user-settings/user-settings.component';
 import { PopupComponent } from './components/molecules/popup/popup.component';
-
+import { ReserveConfirmationComponent } from './pages/reserve-confirmation/reserve-confirmation.component';
 
 @NgModule({
   declarations: [
@@ -104,6 +104,7 @@ import { PopupComponent } from './components/molecules/popup/popup.component';
     RatingCardComponent,
     UserSettingsComponent,
     PopupComponent,
+    ReserveConfirmationComponent,
     ],
   imports: [
     BrowserModule,

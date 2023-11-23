@@ -1,4 +1,5 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, ViewChild } from '@angular/core';
+import { PopupComponent } from '../../molecules/popup/popup.component';
 
 @Component({
   selector: 'app-reserve-card',
@@ -8,4 +9,7 @@ import { Component, Input } from '@angular/core';
 export class ReserveCardComponent {
   @Input() name: string ='';
   @Input() valor: string ='';
+  @Input() id: string = ''
+
+
 }

@@ -7,17 +7,21 @@ import { SearchComponent } from './pages/search/search.component';
 import { PerfilComponent } from './pages/perfil/perfil.component';
 import { UserSettingsComponent } from './pages/user-settings/user-settings.component';
 import { AuthGuard } from './services/auth-guard.guard';
-
+import { ReserveConfirmationComponent } from './pages/reserve-confirmation/reserve-confirmation.component';
 
 
 const routes: Routes = [{ path: 'register', component: RegisterComponent },
 {path: 'login', component: LoginComponent},
 { path: '', component: HomeComponent },
 {path: 'search', component: SearchComponent},
+{ path: 'settings', component: UserSettingsComponent, canActivate: [AuthGuard]},
 { path: 'profile/:id', component: PerfilComponent },
-{ path: 'settings', component: UserSettingsComponent, canActivate: [AuthGuard] },
+  {path: 'profile/:id/confirmation', component: ReserveConfirmationComponent, canActivate: [AuthGuard]},
 
-];
+]
+
+
+
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
